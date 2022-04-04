@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kalam&family=Lato&family=Montserrat&family=Patrick+Hand&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,body{
+    background: #e2f8ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li, a {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: #e2f8ff;
+    text-decoration: none;
+
+}
+
+/* NAV STATRTS */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #001744;
+    color: #001744;
+    align-items: center;
+    padding: 10px 20px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: rgb(203, 203, 203);
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+
+  .affix + .container-fluid {
+    padding-top: 70px;
+}
+/* NAV ENDS */
+
+/* HEADING STARTS */
+.heading{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    background-image: url('./images/covid19.webp');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+
+.heading_text{
+    text-align: right;
+    padding-right: 150px;
+    font-size: 5vw;
+    width: 100%;
+    position: relative;
+
+    /* ANIMATION */
+    /* animation: typing 5s steps(25), blink 1s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden; */
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+/* ANIMATION EBD */
+
+.headingline1{
+    padding: 50px 0 0 0 ;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 5vh;
+    width: 100%;
+    position: relative;
+}
+
+.headingline2{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3vh;
+    width: 100%;
+    position: relative;
+}
+
+
+/* HEADING ENDS */
+
+hr{
+    margin: 350px 0px;
+}
+
+/* .space{
+    padding: 50% 0% 0% 0%;
+} */
+
+
+/* UPLOAD SECTION STARTS */
+.upload-btn-wrapper{
+    position: relative;
+    overflow:hidden;
+    display:inline-block;
+    cursor:pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.upload_heading{
+    font-size: 5vh;
+    color: #001744;
+    padding: 5% 0% 0% 0%;
+}
+
+.upload-file{
+    border:2px dashed #e2f8ff;
+    background: #e2f8ff;
+    width:100%;
+    height:250px;
+    font-size:15px;
+    cursor: pointer;
+}
+.upload-btn-wrapper input[type=file]{
+    width:100%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    opacity: 0;
+    cursor: pointer;
+    min-height: 300px;
+}
+
+.success-1, .success-2{
+    display:none;
+    color: rgb(255, 255, 255);
+}
+.success-1 i, .success-2 i{
+    font-size: 18px !important;
+    margin-left:6px;
+    margin-top:4px;
+    color: white;
+    border: 1px solid #001744;
+    padding: 5px;
+    border-radius: 50%;
+}
+.font-50{
+    font-size:50px;
+}
+.d-block{
+    display:block;
+}
+.btn .upload-file{
+    font-size: 30px;
+}
+.upload-btn{
+    display:block;
+    font-size: 18px;    
+    color: #001744;
+    font-weight: bold;
+}
+
+.upload-btn i{
+    font-size: 100px;
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    margin: 20px auto;
+    }
+    
+.box{
+    width: 45%;
+}
+
+.box img{
+    height: auto;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box img{
+    border-radius: 20px;
+    height: 350px;
+}
+
+.box-result p{
+    /* background: limegreen; */
+    background: #001744;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display : none;
+    text-align: center;
+}
+
+
+.box-result{
+    display: none;
+}
+
+.accuracy{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.progress {
+width: 130px;
+height: 130px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.progress > .inner {
+position: absolute;
+font-weight: bold;  
+color: #001744; 
+border: 1px solid #001744;
+}
+
+.progress > svg {
+height: 100%;
+display: block;
+}
+
+.init_status{
+    background: #001744;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out .5s;
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+@media (max-width: 768px){
+    .box{
+        width: 100%;
+    }
+}
+
+.tutorial{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
+    font-size: 3vh;
+    text-align: center;
+    color: #222222;
+}
+
+.tutorial a{
+    font-size: 2.5vh;
+    color: #001744;
+}
+
+path {
+    stroke: #001744;
+    stroke-width: 10;
+    fill-opacity: 0.2;
+}
+/* UPLOAD SECTION ENDS */
+
+/* DESCRIPTION STARTS */
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    border-radius: 50px;
+    background-image: url("./images/descbckg.jpg");
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    padding: 5% 7%;
+
+}
+
+.desc_heading{
+    color: #001744;
+    padding: 10px;
+    font-size: 5vh;
+}
+
+.desc_text{
+    font-size: 4vh;
+    padding: 30px 80px;
+    color: #001744;
+    padding: 20px;
+}
+/* DESCRIPTION ENDS */
+
+
+/* CONTRIBUTORS SECTION STARTS */
+.contributers{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #e2f8ff;
+    color: #001744;
+    align-items: center;
+    
+    height: 50px;
+    width: 100%;
+
+    padding: 2% 0% 4% 0%;
+}
+
+.cont_heading{
+    font-size: 4vh;
+    /* padding: 0% 0% 5% 0%; */
+}
+
+.cont_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-radius: 20px; */
+
+    background-color: #e2f8ff;
+    color: #001744;
+    
+    height: 250px;
+    width: 100%;
+}
+
+.profile1{
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;  
+    align-items: center;
+    justify-content: center;
+}   
+
+.profile1 img{
+    padding: 20px 20px;
+    color: #001744;
+}
+.profile1 ul li{
+    padding: 5px 5px;
+    color: #001744;
+}
+.profile1 ul b{
+    font-size: 3vh;
+    color: #001744;
+}
+.cont_text i{
+    cursor: pointer;
+    color: #001744;
+    padding: 5px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #001744;
+    padding: 0% 2%;
+}
+
+.profile2{
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    border-style: solid;  
+    
+    align-items: center;
+    justify-content: center;
+}   
+
+.profile2 img{
+    padding: 20px 20px;
+    color: #001744;
+}
+.profile2 ul li{
+    color: #1d4719;
+    padding: 5px 5px;
+    color: #001744;
+}
+.profile2 ul b{
+    font-size: 3vh;
+    color: #001744;
+}
+
+.cont_text img{
+    border-radius: 100px;
+    color: #001744;
+}
+/* CONTRIBUTORS SECTION ENDS */
+
+/* THANK SECTION STARTS*/
+/* .thank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 5vh;
+}
+
+.thank ul{
+    font-size: 4vh; 
+}*/
+/* THANK SECTION ENDS */
+
+/* COPYRIGHT STARTS */
+.copyright{
+    display: flex;
+    flex-direction: column;
+    color: rgb(24, 66, 11);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px;
+    align-items: center;
+    font-size: 2vh;
+    width: 80%;
+    height: 100px;
+}
+/* COPYRIGHT ENDS */

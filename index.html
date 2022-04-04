@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Covid-19 Detector</title>
+    <link rel="icon" type="image/png" href="images/icon.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANT DISEASE DETECTOR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="affix" data-offset-top="197">
+        <ul class="nav_links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#detector">Detector</a></li>
+            <li><a href="#description">Guidelines</a></li>
+            <li><a href="#about">Developers</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <a name="home"></a>
+        <div class="heading">
+            <div class="heading_text">
+                <h1>COVID-19</h1>
+                <h1>DETECTOR</h1>
+            </div>
+            <br>
+            <div class="headingline1">
+                <h3></h3>
+            </div>
+        </div>
+            
+    </section>
+
+    <span class="space">
+        <a name="detector"></a>
+    </span>
+
+
+    <div class="upload-btn-wrapper">
+        
+        <button class="btn upload-file font-weight-500">
+            <span class="upload-btn">
+                <div class="upload_heading">
+                    <h3>Detector</h3>
+                </div>
+                <i class="material-icons d-block font-50 pb-2">cloud_upload</i>
+                    <p id="choose-text-1">Upload X-ray Image Here</p>
+            </span>
+            <span class="upload-select-button" id="blankFile-1">
+                (*Supports .png, .jpg, .jpeg, .jfif)
+            </span>
+            <span class="success-1">
+                <i class="material-icons text-success">check</i>
+            </span>
+        </button>
+        <input type="file" name="uploadImage" id="uploadImage">
+    </div>
+
+    <p class = "tutorial">Get Test Images <a href="https://drive.google.com/drive/folders/1wPIMccJZuIanED8Svb8BsDj8jP_8ad5E" target="blank">CLick Here</a> </p>
+
+    <div class="row">
+        <div class="box">
+            <img src="" alt="" id="image">
+        </div>
+        
+        <div class="box box-result">
+            <div class="init_status"></div>
+            <div>
+                <h2>ㅤㅤㅤㅤㅤㅤTest Result -  <span class="pred_class"></span></h2>
+                
+            </div>
+            <div class="accuracy">
+                <div class="progress" id="progress">
+                    <div class="inner">
+                      
+                    </div>
+                  </div>
+
+            </div>
+            <p style="padding : 10px;"> ACCURACY : <b><span class="confidence"></span></b> %</p>
+        </div>
+    </div>
+
+    <span class="space">
+        <a name="description"></a>
+    </span>
+
+    <div class="description">
+        <div class="desc_heading">
+            <h2><u>Covid Guidelines</u></h2>
+        </div>
+        <div class="desc_text">
+            The coronavirus that causes COVID-19 spreads through droplets containing the virus that can enter another person’s body through their eyes, nose, mouth, or lungs. Therefore maintain a physical distance of at least 6 feet from people around you to avoid spread.
+Get properly vaccinated. Do not forget to wear a mask every time you get out of your house even if your vaccination shots are completed. 
+Wash your hands frequently and use an alcohol-based hand sanitizer. Use germ-free disinfectants to keep your surroundings clean.
+Whenever you cough or sneeze, use a tissue or a handkerchief to avoid the droplets from spreading. Ensure that they are properly disposed.
+In case you develop symptoms of being COVID positive, get yourself tested without delay and opt for home isolation if the condition is not severe.
+
+        </div>
+        <div class="upload_image">
+        </div> 
+    </div>
+    <br><br>
+
+    <div class="contributers">
+        <a name="about"></a>
+        <div class="cont_heading">
+            <h2><u>Developers</u></h2>
+        </div>
+    </div>
+
+    <div class="cont_text">
+        <div class="profile1">
+            <img src="./images/p1.jpeg" height="200px" width="200px" id="pro1">
+            <ul>
+                <li><a href="https://aritra.netlify.app/" target = _blank><b>Aritra Nandi</b></a></li>
+                <li>KIIT University</li>
+                <li>1906463@kiit.ac.in</li>
+                <span class="icons">
+                <li>
+                    <a href="https://github.com/aritranandi" target = _blank>
+                        <i class="fa fa-github" style="font-size:36px"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aritra-nandi-6895481a5/"target = _blank>
+                        <i class="fa fa-linkedin-square" style="font-size:36px"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/nandiaritra20"target = _blank>
+                        <i class="fa fa-twitter" style="font-size:36px"></i>
+                    </a>
+                </li>
+                </span>
+            </ul>
+        </div>
+        
+        <div class="profile2">
+            <img src="./images/shivam.jpeg" height="200px" width="200px" id="pro2">
+            <ul>
+                <li><a href="https://shivam-yadav.netlify.app/" target = _blank><b>Shivam Yadav</b></a></li>
+                <li>KIIT University</li>
+                <li>1906505@kiit.ac.in</li>
+                <span class="icons">
+                    <li>
+                        <a href="https://github.com/shivamyadav42001"target = _blank>
+                            <i class="fa fa-github" style="font-size:36px"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shivam-yadav-0a09781a0/" target = _blank>
+                            <i class="fa fa-linkedin-square" style="font-size:36px"></i> 
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="https://twitter.com/Shivam54418632"target = _blank>
+                            <i class="fa fa-twitter" style="font-size:36px"></i>
+                        </a>
+                    </li>
+                    </span>
+            </ul>
+        </div>
+    </div>
+ 
+    <div class="cont_text">
+        <div class="profile1">
+            <img src="./images/asmita.jpeg" height="200px" width="200px" id="pro1">
+            <ul>
+                <li><a href="https://www.behance.net/asmitahobisyashi" target = _blank><b>Asmita Hobisyashi</b></a></li>
+                <li>KIIT University</li>
+                <li>1906469@kiit.ac.in</li>
+                <span class="icons">
+                <li>
+                    <a href="https://github.com/crayonpillars"target = _blank>
+                        <i class="fa fa-github" style="font-size:36px"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/asmita-hobisyashi-8564071a3/"target = _blank>
+                        <i class="fa fa-linkedin-square" style="font-size:36px"></i> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/CrayonPillars"target = _blank>
+                        <i class="fa fa-twitter" style="font-size:36px"></i>
+                    </a>
+                </li>
+                </span>
+            </ul>
+        </div>
+        
+        <div class="profile2">
+            <img src="./images/arghyadeep.jpeg" height="200px" width="200px" id="pro2">
+            <ul>
+                <li><a href="https://arghyadeepghosh.herokuapp.com/" target = _blank><b>Arghyadeep Ghosh</b></a></li>
+                <li>KIIT University</li>
+                <li>1906462@kiit.ac.in</li>
+                <span class="icons">
+                    <li>
+                        <a href="https://github.com/Arghya721"target = _blank>
+                            <i class="fa fa-github" style="font-size:36px"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/arghyadeep-ghosh-08307b1a9/"target = _blank>
+                            <i class="fa fa-linkedin-square" style="font-size:36px"></i> 
+                        </a>
+                    </li>                    
+                    <li>
+                        <a href="https://twitter.com/Arghya72"target = _blank>
+                            <i class="fa fa-twitter" style="font-size:36px"></i>
+                        </a>
+                    </li>
+                    </span>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="copyright">
+        Copyright © 2022 PDD. All rights reserved.
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.0.1/tf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <script src="script.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kalam&family=Lato&family=Patrick+Hand&display=swap');</style>
+</body>
+</html>
